@@ -1,4 +1,14 @@
      /* The switch - the box around the slider */
+     .container {
+         column-count: 2;
+     }
+     .reset {
+         margin-top: 10px;
+         height: 40px;
+         border-radius: 20px;
+         background-color: #2246ee;
+         color: white;
+     }
      .switch {
         position: relative;
         display: inline-block;

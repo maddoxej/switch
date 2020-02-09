@@ -24,6 +24,18 @@
             else{
                 localStorage.switch = localStorage.switch.replace(s.id + ",","");
             } 
+        });       
+        cb.disabled = false;
+    });
+
+    var resetButton = document.querySelector("input.reset");
+    resetButton.addEventListener('click', function(){
+        var switches =[].slice.call(document.querySelectorAll(".switch"));
+        switches.forEach(s =>{
+            var cb = s.querySelector("input");
+            cb.checked = false;
         });
+        
+        localStorage.switch = "";
     });
 })();

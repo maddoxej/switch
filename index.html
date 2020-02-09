@@ -1,4 +1,4 @@
-<html>
+<html manifest="switch.appcache">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -6,10 +6,13 @@
     <link rel="stylesheet" type="text/css" href="switch.css"/>
 </head>
 <body>
-    <label class="switch" id="switch1">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+    <div class="container">
+        <label class="switch" id="switch1">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <input type="reset" class="reset" />
     <script src="switch.js" ></script>
 </body>
 </html>
