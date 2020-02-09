@@ -1,18 +1,25 @@
-<html manifest="switch.appcache">
+<html manifest="switch.appcache" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Switch</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196F3" />
     <link rel="stylesheet" type="text/css" href="switch.css"/>
+    <link rel="apple-touch-icon" href="Switch192.png" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Keep track of several switches. Use parameter ?s=Number of switches">
 </head>
 <body>
     <div class="container">
         <label class="switch" id="switch1">
-            <input type="checkbox">
+            <input type="checkbox" aria-label="C1">
             <span class="slider round"></span>
         </label>
     </div>
+    <label>
     <input type="reset" class="reset" />
+    </label>
     <script src="switch.js" ></script>
 </body>
 </html>
