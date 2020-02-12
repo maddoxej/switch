@@ -20,8 +20,10 @@
     <label>
     <input type="reset" class="reset" />
     </label>
+    <input type="button" value="-" class="circleButton removeButton" />
+    <input type="button" value="+" class="circleButton addButton" />
     <script>
-        if ('serviceWorker' in navigator) {
+        if (false && 'serviceWorker' in navigator) {
             window.addEventListener('load', () => {
             navigator.serviceWorker.register('service-worker.js')
                 .then((reg) => {
